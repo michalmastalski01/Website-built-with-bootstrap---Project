@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+nav {
+  text-transform: uppercase;
+  width: 100vw;
+  z-index: 2;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+  transition: color 0.1s ease-in-out;
+}
+nav .nav-link, nav .navbar-brand, nav .navbar-brand:focus, nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus, nav .nav-link:hover, nav .navbar-nav .nav-link.active, nav .navbar-brand:hover {
+  color: #039dff;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/hero-small.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+header.hero-img h1 {
+  text-transform: uppercase;
+}
+header.hero-img .hero-text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+header.hero-img .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url("../img/hero-big.jpg");
+  }
+}/*# sourceMappingURL=style.css.map */
